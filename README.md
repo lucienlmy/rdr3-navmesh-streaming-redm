@@ -66,16 +66,16 @@ Highlight those files then Right Click -> Export XML...
 
 ## 4. Importing XML & Exporting RAW using CodeX
 *  Open CodeX.Explorer
-  1. Goto File -> Open Folder... location of your .XML from Blender
-  2. Right Click "navmesh[288][261].ynv.xml" (or whatever your file is)
-  3. Import XML... -> Open
-  4. You now have a streamable navmesh (.ynv) file in that directory!
+  1. Goto File -> Open Folder... location of your .XML from Blender  
+  2. Right Click "navmesh[288][261].ynv.xml" (or whatever your file is)  
+  3. Import XML... -> Open  
+  4. You now have a streamable navmesh (.ynv) file in that directory!  
 
 ## 5. Streaming .ynv file
-* Navigate to the resource we created in Step 1.
-  1. Drag and Drop the "navmesh[###][###].ynv" into the "stream" folder.
-  2. Start the server
-  3. Spawn any ped on your new navmesh to test it out!
+*  Navigate to the resource we created in Step 1.  
+  1. Drag and Drop the "navmesh[###][###].ynv" into the "stream" folder.  
+  2. Start the server  
+  3. Spawn any ped on your new navmesh to test it out!  
 
 
 ## Credits
