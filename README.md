@@ -14,6 +14,8 @@ Please note that this is only generates "blank" navmeshes that do not automatica
 
 ## Notes:
 > Navmesh will only generate if the collision provided has an area of at least 150x150.
+>   
+>  There is a lot of info missing from this tutorial that I will add over time!  
 ---
 
 ## 1. File Structure & Preparation
