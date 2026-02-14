@@ -25,8 +25,9 @@ Untested. Stairs?
        ![view of Sollumz collision flags dropdown menu](ButterBridgeTutorial/assets/collision-flags.png)  
     3. For each MATERIAL listed on the bound geometry, update the collision flags.  
        ![view of Sollumz material list](ButterBridgeTutorial/assets/material-list.png)  
-    4. Repeat for each collision tile, and subsequently each material for each tile.  
-    5. File -> Export CodeX .xml - put in /stream/ folder and ensure the file for fxmanifest.lua
+    4. Repeat for each collision tile, and subsequently each material for each tile. Do this for each collision tile that is used by your new navmesh.
+    5. File -> Export CodeX .xml THEN Import .xml to Codex, extract new .ybn - Put .ybn in /stream/ folder and ensure the file for fxmanifest.lua
+       
        
 ### List of flags
 - STAIRS
