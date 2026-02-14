@@ -3,7 +3,7 @@ This tutorial is extremely basic and will be updated with time.
 ### 1. Start with a fresh navmesh using the tutorial
 ![screenshot of freshly generated navmesh](/ButterBridgeTutorial/assets/newmesh.png)
 
-### 2. Hide or delete the collisions.
+### 2. Make sure you have [updated .ybn material flags](UpdateYbnFlags.md) if necessary. Otherwise, we can hide/delete these.
 ![screenshot of hiding ybn collisions](/ButterBridgeTutorial/assets/hideterrain.png)
 
 -- View of navmesh properties tab under object properties --  
