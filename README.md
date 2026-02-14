@@ -13,8 +13,8 @@ This tutorial will guide you on how to extract collisions, import them to Blende
 Please note that this is only generates "blank" navmeshes that do not automatically have the polygon flags relevant to the base game. See [Editing Navmeshes](EditingNavmesh.md) for more information on adding those flags before exporting from Blender.
 
 ## Notes:
-> Navmesh will only generate if the collision provided has an area of at least 150x150.
->   
+> Navmesh will only generate if the collision provided has an area of at least 150x150.   
+>
 >  There is a lot of info missing from this tutorial that I will add over time!
 ### Known Info to be added:
 - Disabling world collision (.ybn) flags on out of map areas with Sollumz (NO NAVMESH, TOO STEEP FOR PLAYER, etc.)
@@ -56,6 +56,7 @@ Highlight those files then Right Click -> Export XML...
 
 ## 3. Importing to Blender
 *   Open Blender and ensure [RDR2SollumzNavmesh](https://github.com/Foxxyyy/RDR2SollumzNavmesh) is installed and enabled.
+*   Important! [Update .ybn flags](UpdateYbnFlags.md) to ensure proper navmesh support when adding navmesh outside of the playable area (Mexico/Nuevo Paraiso)
   1.  From an empty scene: File -> Import -> CodeX XML - Select the .ybn.xml files that were exported from CodeX
   2.  Open the "Sollumz Tools" sidebar. Highlight all objects in the scene.
   3.  Under the "Navigation Mesh" dropdown menu, check "Compute Edge Neighbors" then select "Generate Navmesh from Collision"
