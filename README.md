@@ -10,10 +10,15 @@
 Navmesh files (.ynv) can be generated using existing collisions extracted with CodeX (tested with 0.28 & 0.29) using the [RDR2SollumzNavmesh](https://github.com/Foxxyyy/RDR2SollumzNavmesh) plugin in Blender. 
 This tutorial will guide you on how to extract collisions, import them to Blender, generate a new navmesh, export/import the files through CodeX and finally stream the resulting Navmesh inside your RedM server.
 
-Please note that this is currently limited to "blank" navmeshes that do not have the inherent flags relevant to the base game, although I will update this guide if there is a reliable way to add this in (without manually editing the resulting .xml file before final export). tl;dr These navmeshes support animals/NPCs just fine, but they will not recognize roads, walls, out of bounds, water, town limits, etc. without additional work to define the polygons manually in the .XML (as far as I know).
+Please note that this is only generates "blank" navmeshes that do not automatically have the polygon flags relevant to the base game. See [Editing Navmeshes](EditingNavmesh.md) for more information on adding those flags before exporting from Blender.
 
 ## Notes:
 > Navmesh will only generate if the collision provided has an area of at least 150x150.
+>   
+>  There is a lot of info missing from this tutorial that I will add over time!
+### Known Info to be added:
+- Disabling world collision (.ybn) flags on out of map areas with Sollumz (NO NAVMESH, TOO STEEP FOR PLAYER, etc.)
+- Editing exisiting (vanilla) navmesh.
 ---
 
 ## 1. File Structure & Preparation
