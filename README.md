@@ -43,10 +43,10 @@ lua54 'yes'
 ## 2. Use CodeX to grab collisions.
 Open CodeX.Explorer
 Navigate to your desired collision(s). For this example we will be using these files:
-*  s_07_collision_0
-*  s_07_collision_1
-*  s_07_collision_2
-*  s_07_collision_3
+*  s_07__collision_0
+*  s_07__collision_1
+*  s_07__collision_2
+*  s_07__collision_3
 
 Which can be found in CodeX.Explorer here:
 `RDR2\levels_6.rpf\levels\rdr3\terrain\rstu_07_10\s_07_.rpf`
