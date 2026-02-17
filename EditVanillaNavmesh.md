@@ -15,7 +15,7 @@ For this guide, we will be editing the Blackwater Town Square tile. After settin
 ![screenshot of CodeX viewer with a navmesh tile selected, filepath in properties](BlackwaterTutorial/assets/locate-vanilla.png)  
 
 Open this filepath in CodeX.Explorer  
-```/path/to/ynv/rpf/ynv/rpf/etc```  
+```RDR2\levels_1.rpf\levels\rdr3\navmeshes3.rpf```  
 ![Screenshot of CodeX.Explorer pointing to the /path/ of our .ynv, with export selected in context menu](BlackwaterTutorial/assets/export-vanilla.png)  
 
 and export the file.  
@@ -25,11 +25,11 @@ and export the file.
 File -> Import CodeX .xml  
 
 OPTIONAL: 
-Hide "SpecialLinks" from view.
-![screenshot of a clean view of navmesh with links hidden](BlackwaterTutorial/assets/hide-links.png)
+Hide "SpecialLinks" from view.  
+![screenshot of a clean view of navmesh with links hidden](BlackwaterTutorial/assets/hide-links.png)  
 
-Toggle Viewport Shading: Material Preview
-![screenshot of viewport shading toggle](BlackwaterTutorial/assets/view-material.png)
+Toggle Viewport Shading: Material Preview  
+![screenshot of viewport shading toggle](BlackwaterTutorial/assets/view-material.png)  
 
 ## 3. Edit your navmesh  
 This step can be the trickiest. There are a myriad of issues that can occur from improperly editing a navmesh, and once those are solved you may still not have the desired result.   
