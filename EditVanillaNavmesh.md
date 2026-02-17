@@ -1,4 +1,3 @@
-// todo //
 # Editing Vanilla Navmesh  
 **When making edits to a vanilla navmesh it is important to remember that this is a poorly documented and complex task. I HIGHLY recommend you first familiarize yourself with the other guides, especially those who are new to Blender or CodeX.**  
 As of right now, you cannot simply "delete" polygons out of an existing navmesh. Breaking any links/nodes will cause corruption, either to parts of the tile or the entire .ynv file.  
@@ -38,5 +37,20 @@ For starters here are a list of things to AVOID:
 - Deleting polygons, links, or nodes.  
 - Splitting polygons from the mesh. (hotkey Y or Right Click -> Split)
 
-Enter Edit Mode - Select Faces
-// TODO //
+Enter Edit Mode - Select Faces for edit  
+![screenshot of selection](BlackwaterTutorial/assets/edit-scale-polygons.png)
+
+Scale (resize) to create a hole in navmesh  
+![screenshot of scale](BlackwaterTutorial/assets/edit-resize.png)
+
+then move the selection out of the way to complete the "hole"
+![screenshot of move](BlackwaterTutorial/assets/edit-scale-move.png)
+
+Verify changes in CodeX
+![screenshot of edited navmesh in CodeX](BlackwaterTutorial/assets/view-in-codex.png)
+
+Finally, Import your final file (.ynv.xml) using CodeX.Explorer and move the resulting .ynv into your /stream/ folder.
+
+Verify changes in game:
+![screenshot of ped not entering new navmesh area](BlackwaterTutorial/assets/ped-no-follow.png)
+
