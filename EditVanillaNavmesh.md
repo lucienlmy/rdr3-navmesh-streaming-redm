@@ -1,0 +1,56 @@
+# Editing Vanilla Navmesh  
+**When making edits to a vanilla navmesh it is important to remember that this is a poorly documented and complex task. I HIGHLY recommend you first familiarize yourself with the other guides, especially those who are new to Blender or CodeX.**  
+As of right now, you cannot simply "delete" polygons out of an existing navmesh. Breaking any links/nodes will cause corruption, either to parts of the tile or the entire .ynv file.  
+Notable signs of corruption:  
+> 1. Crash when entering the area.  
+> 2. Crash when NPC attempts to utilize navmesh.  
+> 3. NPC refusing to enter navmesh tile area.  
+> 4. Broken pathing - running in circles, taking "odd" routes to destinations.  
+
+
+Files used in this tutorial can be found [here](BlackwaterTutorial)  
+## 1. Locate and export .ynv files using CodeX  
+For this guide, we will be editing the Blackwater Town Square tile. After setting our viewer to show Navmesh, select our tile to view the file path.  
+![screenshot of CodeX viewer with a navmesh tile selected, filepath in properties](BlackwaterTutorial/assets/locate-vanilla.png)  
+
+Open this filepath in CodeX.Explorer  
+```RDR2\levels_1.rpf\levels\rdr3\navmeshes3.rpf```  
+![Screenshot of CodeX.Explorer pointing to the /path/ of our .ynv, with export selected in context menu](BlackwaterTutorial/assets/export-vanilla.png)  
+
+and export the file.  
+
+## 2. Import into Blender 
+**IMPORTANT! Depending on the full scope of your edits, you may want to [update the material flags](UpdateYbnFlags.md) for the vanilla collision! If you are unsure, you can skip this.**  
+File -> Import CodeX .xml  
+
+OPTIONAL: 
+Hide "SpecialLinks" from view.  
+![screenshot of a clean view of navmesh with links hidden](BlackwaterTutorial/assets/hide-links.png)  
+
+Toggle Viewport Shading: Material Preview  
+![screenshot of viewport shading toggle](BlackwaterTutorial/assets/view-material.png)  
+
+## 3. Edit your navmesh  
+This step can be the trickiest. There are a myriad of issues that can occur from improperly editing a navmesh, and once those are solved you may still not have the desired result.   
+
+For starters here are a list of things to AVOID:  
+- Deleting polygons, links, or nodes.  
+- Splitting polygons from the mesh. (hotkey Y or Right Click -> Split)
+
+Enter Edit Mode - Select Faces for edit  
+![screenshot of selection](BlackwaterTutorial/assets/edit-scale-polygons.png)
+
+Scale (resize) to create a hole in navmesh  
+![screenshot of scale](BlackwaterTutorial/assets/edit-resize.png)
+
+then move the selection out of the way to complete the "hole"
+![screenshot of move](BlackwaterTutorial/assets/edit-scale-move.png)
+
+Verify changes in CodeX
+![screenshot of edited navmesh in CodeX](BlackwaterTutorial/assets/view-in-codex.png)
+
+Finally, Import your final file (.ynv.xml) using CodeX.Explorer and move the resulting .ynv into your /stream/ folder.
+
+Verify changes in game:
+![screenshot of ped not entering new navmesh area](BlackwaterTutorial/assets/ped-no-follow.png)
+
