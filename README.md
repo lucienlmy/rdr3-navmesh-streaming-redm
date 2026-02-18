@@ -57,7 +57,7 @@ Highlight those files then Right Click -> Export XML...
 
 
 ## 3. Importing to Blender
-*   Open Blender and ensure [RDR2SollumzNavmesh](https://github.com/Foxxyyy/RDR2SollumzNavmesh) is installed and enabled.
+*   Open Blender and ensure [RDR2SollumzNavmesh](https://github.com/charlietonygene/RDR2SollumzNavmesh) is installed and enabled.
 *   Important! [Update .ybn flags](UpdateYbnFlags.md) to ensure proper navmesh support when adding navmesh outside of the playable area (Mexico/Nuevo Paraiso)
   1.  From an empty scene: File -> Import -> CodeX XML - Select the .ybn.xml files that were exported from CodeX
   2.  Open the "Sollumz Tools" sidebar. Highlight all objects in the scene.
